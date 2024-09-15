@@ -73,6 +73,10 @@ a:hover {
     border: 1px solid black;
 }
 
+.table th {
+    font-weight: 700;
+}
+
 #footer {
     color: white;
     background: black;
