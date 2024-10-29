@@ -89,11 +89,12 @@ function addDish(event) {
     }
 
     let select = selectContainer.querySelector(`#${dish.category}-select`);
-    
+
     select.lastElementChild.innerHTML = `${dish.name} ${dish.price}&#8381;`;
+    select.firstElementChild.value = dish.keyword;
     selectContainer.querySelector(".select > .price").innerHTML = `${calculatePrice()}&#8381;`;
 
-    document.getElementById(`${dish.category}-input`).value = dish.keyword;
+    // document.getElementById(`${dish.category}-input`).value = dish.keyword;
 }
 
 window.onload = displayDishes;
