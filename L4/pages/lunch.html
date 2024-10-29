@@ -71,28 +71,6 @@
                         </div>
                     </div>
 
-
-                    <!-- <label for="soups-select">Суп</label>
-                    <select name="soups" id="soups-select" required>
-                        <option value="" selected disabled>-- Выберите суп --</option>
-                        <option value="gaspacho">Гаспачо</option>
-                        <option value="mushroom soup">Грибной суп-пюре</option>
-                        <option value="norwegian soup">Норвежский суп</option>
-                    </select>
-                    <label for="main-course-select">Главное блюдо</label>
-                    <select name="main-course" id="main-course-select" required>
-                        <option value="" selected disabled>-- Выберите гравлное блюдо</option>
-                        <option value="fried potatoes with mushrooms">Жаренная картошка с грибами</option>
-                        <option value="lasagna">Лазанья</option>
-                        <option value="chicken cutlets and mashed potatoes">Котлеты из курицы с картофельным пюре</option>
-                    </select>
-                    <label for="beverages-select">Напитки</label>
-                    <select name="beverages" id="beverages-select" required>
-                        <option value="" selected disabled>-- Выберите напиток</option>
-                        <option value="orange juice">Апельсиновый сок</option>
-                        <option value="apple juice">Яблочный сок</option>
-                        <option value="carrot juice">Морковный сок</option>
-                    </select> -->
                     <label for="comment">Комментарий</label>
                     <textarea name="comment" id="comment" rows="5"></textarea>
                 </div>
@@ -120,11 +98,11 @@
                     <fieldset class="radio-set">
                         <legend>Время доставки:</legend>
                         <div>
-                            <input type="radio" name="delivery-speed" id="fast-radio" required>
+                            <input type="radio" name="delivery-speed" id="fast-radio" value="fast" required>
                             <label for="fast-radio">Как можно скорее</label>
                         </div>
                         <div>
-                            <input type="radio" name="delivery-speed" id="concrete-radio">
+                            <input type="radio" name="delivery-speed" id="concrete-radio" value="in-time">
                             <label for="concrete-radio">К указанному времени</label>
                         </div>
                     </fieldset>
