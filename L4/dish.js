@@ -29,7 +29,7 @@ export const dishes = [
         195, 
         350, 
         "soups", 
-        "../images/menu/soups/gazpacho.jpg"
+        "../../images/menu/soups/gazpacho.jpg"
     ),
     new Dish(
         "mushroom-soup", 
@@ -37,7 +37,7 @@ export const dishes = [
         185, 
         330, 
         "soups", 
-        "../images/menu/soups/mushroom_soup.jpg"
+        "../../images/menu/soups/mushroom_soup.jpg"
     ),
     new Dish(
         "norwegian-soup", 
@@ -45,7 +45,7 @@ export const dishes = [
         270, 
         330, 
         "soups", 
-        "../images/menu/soups/norwegian_soup.jpg"
+        "../../images/menu/soups/norwegian_soup.jpg"
     ),
 
     // Основные блюда
@@ -55,7 +55,7 @@ export const dishes = [
         150, 
         350, 
         "main-course", 
-        "../images/menu/main_course/friedpotatoeswithmushrooms1.jpg"
+        "../../images/menu/main_course/friedpotatoeswithmushrooms1.jpg"
     ),
     new Dish(
         "lasagna", 
@@ -63,7 +63,7 @@ export const dishes = [
         385, 
         310, 
         "main-course", 
-        "../images/menu/main_course/lasagna.jpg"
+        "../../images/menu/main_course/lasagna.jpg"
     ),
     new Dish(
         "chicken-cutlets-and-mashed-potatoes", 
@@ -71,7 +71,7 @@ export const dishes = [
         225, 
         280, 
         "main-course", 
-        "../images/menu/main_course/chickencutletsandmashedpotatoes.jpg"
+        "../../images/menu/main_course/chickencutletsandmashedpotatoes.jpg"
     ),
 
     // Напитки
@@ -81,7 +81,7 @@ export const dishes = [
         120, 
         300, 
         "beverages", 
-        "../images/menu/beverages/orangejuice.jpg"
+        "../../images/menu/beverages/orangejuice.jpg"
     ),
     new Dish(
         "apple-juice", 
@@ -89,7 +89,7 @@ export const dishes = [
         90, 
         300, 
         "beverages", 
-        "../images/menu/beverages/applejuice.jpg"
+        "../../images/menu/beverages/applejuice.jpg"
     ),
     new Dish(
         "carrot-juice", 
@@ -97,6 +97,6 @@ export const dishes = [
         110, 
         300, 
         "beverages", 
-        "../images/menu/beverages/carrotjuice.jpg"
+        "../../images/menu/beverages/carrotjuice.jpg"
     ),
 ];
