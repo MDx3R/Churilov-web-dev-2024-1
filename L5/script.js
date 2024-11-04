@@ -14,8 +14,8 @@ function filterDishes(category, kind = null) {
 
 function filter(event) {
     let target = event.currentTarget;
-    console.log(target.parentElement.parentElement.id);
     let kind = null;
+
     if (target.classList.contains("filter-active")) {
         target.classList.remove("filter-active");
     } else {
@@ -25,6 +25,7 @@ function filter(event) {
         target.classList.add("filter-active");
         kind = target.dataset.kind;
     }
+
     filterDishes(target.parentElement.parentElement.id, kind);
 }
 
@@ -37,10 +38,8 @@ function addDish(event) {
         }
         return price;
     }
-    
-    console.log(event.currentTarget);
 
-    let dishContainer = event.target.parentElement;
+    let dishContainer = event.currentTarget.parentElement;
     let dish = dishContainer.dish;
     let category = dish.category;
     
