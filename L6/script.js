@@ -41,7 +41,7 @@ let chosenDishes = {
         if (!this.beverages) {
             a = "Выберите напиток";
         }
-        if (this.beverages && !main) {
+        if ((this.beverages || this.desserts) && !main) {
             a = "Выберите главное блюдо";
         }
         if (this.salads && !(this.soups || main)) {
