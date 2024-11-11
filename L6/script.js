@@ -41,6 +41,9 @@ let chosenDishes = {
         if (!this.beverages) {
             a = "Выберите напиток";
         }
+        if (!(this.soups || main || this.salads || this.beverages)) {
+            a = "Ничего не выбрано. Выберите блюда для заказа";
+        }
         if ((this.beverages || this.desserts) && !main) {
             a = "Выберите главное блюдо";
         }
@@ -49,9 +52,6 @@ let chosenDishes = {
         }
         if (this.soups && !(main || this.salads)) {
             a = "Выберите главное блюдо или салат/стартер";
-        }
-        if (!(this.soups || main || this.salads || this.beverages)) {
-            a = "Ничего не выбрано. Выберите блюда для заказа";
         }
         return a;
     },
