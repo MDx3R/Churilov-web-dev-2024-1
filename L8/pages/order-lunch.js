@@ -76,9 +76,12 @@ function createHTMLErrorNotification(error) {
 async function submit() {
     let form = document.getElementById("order-form");
     let formData = new FormData(form);
-    formData.set("subscribe", Number(formData.get("subscribe") == "on"));
+    formData.set(
+        "subscribe",
+        String(Number(formData.get("subscribe") == "on"))
+    );
 
-    console.log(formData);
+    console.log(...formData);
 
     let message = null;
 
@@ -87,7 +90,7 @@ async function submit() {
             method: "POST",
             body: formData,
             headers: {
-                "Accept": "application/json",
+                // "Accept": "application/json",
                 "Content-Type": "multipart/form-data"
             },
         });
@@ -95,7 +98,7 @@ async function submit() {
         let json = await response.json();
 
         if (!response.ok) {
-            console.log("Ошибка: ", json.message);
+            console.log("Ошибка: ", json.error);
             message = createHTMLErrorNotification(
                 `Ошибка сети ${response.status}`);
         } else {
