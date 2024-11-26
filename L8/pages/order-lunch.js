@@ -89,10 +89,8 @@ async function submit() {
         let response = await fetch(apiUrl + `/orders?api_key=${apiKey}`, {
             method: "POST",
             body: formData,
-            headers: {
-                // "Accept": "application/json",
-                "Content-Type": "multipart/form-data"
-            },
+            redirect: "follow"
+            // headers: {} // headers все ломают
         });
         
         let json = await response.json();
@@ -105,9 +103,9 @@ async function submit() {
             console.dir(json);
             console.log("Успешно: ", json.message);
             message = createHTMLSuccessNotification("Запрос выполнен успешно!");
-            // for (let dish of chosenDishes.getChosen()) {
-            //     processDish(dish, false);
-            // }
+            for (let dish of chosenDishes.getChosen()) {
+                processDish(dish, false);
+            }
         }
     } catch (error) {
         message = createHTMLErrorNotification(
