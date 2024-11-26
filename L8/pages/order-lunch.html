@@ -43,31 +43,31 @@
                     </div>
                     <div class="select-container" hidden>
                         <div id="soup-select" class="select">
-                            <input type="text" name="soup" id="soup-input" hidden>
+                            <input type="text" name="soup_id" id="soup-input" hidden>
 
                             <p class="select-group">Суп</p>
                             <p class="select-value">Суп не выбран</p>
                         </div>
                         <div id="main-course-select" class="select">
-                            <input type="text" name="main-course" id="main-course-input" hidden>
+                            <input type="text" name="main_course_id" id="main-course-input" hidden>
 
                             <p class="select-group">Главное блюдо</p>
                             <p class="select-value">Главное блюдо не выбрано</p>
                         </div>
                         <div id="salad-select" class="select">
-                            <input type="text" name="salad" id="salad-input" hidden>
+                            <input type="text" name="salad_id" id="salad-input" hidden>
 
                             <p class="select-group">Салат или стартер</p>
                             <p class="select-value">Салат или стартер не выбран</p>
                         </div>
                         <div id="drink-select" class="select">
-                            <input type="text" name="drink" id="drink-input" hidden>
+                            <input type="text" name="drink_id" id="drink-input" hidden>
 
                             <p class="select-group">Напиток</p>
                             <p class="select-value">Напиток не выбран</p>
                         </div>
                         <div id="dessert-select" class="select">
-                            <input type="text" name="dessert" id="dessert-input" hidden>
+                            <input type="text" name="dessert_id" id="dessert-input" hidden>
 
                             <p class="select-group">Десерт</p>
                             <p class="select-value">Десерт не выбран</p>
@@ -85,37 +85,37 @@
                     <h3 class="column__name">Ваши данные</h3>
 
                     <label for="name-input">Имя</label>
-                    <input type="text" name="name" id="name-input" required>
+                    <input type="text" name="full_name" id="name-input" required>
 
                     <label for="email-input">Email</label>
                     <input type="email" name="email" id="email-input" required>
 
                     <div>
-                        <input class="checkbox" type="checkbox" name="allow-notifications" id="notifications-checkbox" checked>
+                        <input class="checkbox" type="checkbox" name="subscribe" id="notifications-checkbox" checked>
                         <label for="notifications-checkbox">Получать информацию о скидках и акциях</label>
                     </div>
 
                     <label for="phone-number-input">Номер телефона</label>
-                    <input type="tel" name="phone-number" id="phone-number-input" required>
+                    <input type="tel" name="phone" id="phone-number-input" required>
                     
                     <label for="address-input">Адрес доставки</label>
-                    <input type="text" name="address" id="address-input" required>
+                    <input type="text" name="delivery_address" id="address-input" required>
                     <i class="input-comment">Достака осуществаляетя только по Москве</i>
 
                     <fieldset class="radio-set">
                         <legend>Время доставки:</legend>
                         <div>
-                            <input type="radio" name="delivery-speed" id="fast-radio" value="fast" required>
+                            <input type="radio" name="delivery_type" id="fast-radio" value="now" required>
                             <label for="fast-radio">Как можно скорее</label>
                         </div>
                         <div>
-                            <input type="radio" name="delivery-speed" id="concrete-radio" value="in-time">
+                            <input type="radio" name="delivery_type" id="concrete-radio" value="by_time">
                             <label for="concrete-radio">К указанному времени</label>
                         </div>
                     </fieldset>
                     
                     <label for="time-input">Укажите время доставки</label>
-                    <input type="time" name="time" id="time-input" min="7:00" max="23:00" step="300">
+                    <input type="time" name="delivery_time" id="time-input" min="7:00" max="23:00" step="300">
                     <i class="input-comment">Доступное время доставки с 7:00 до 23:00</i>
 
                     <div class="buttons">

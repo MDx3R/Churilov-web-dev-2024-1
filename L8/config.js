@@ -14,10 +14,10 @@ const chosenDishes = {
 
     load() {
         for (let x of ["soup", "main-course", "salad", "drink", "dessert"]) {
-            let keyword = localStorage.getItem(x);
-            if (keyword) {
+            let id = localStorage.getItem(x);
+            if (id) {
                 let elem = dishes.find(
-                    (element) => element.keyword == keyword);
+                    (element) => element.id == id);
                 if (elem) {
                     this[x] = elem;
                 }
@@ -65,7 +65,7 @@ const chosenDishes = {
         this.removeDish(category);
 
         // Добавляем запись из localStorage
-        localStorage.setItem(category, dish.keyword);
+        localStorage.setItem(category, dish.id);
 
         // Выбираем текущее блюдо для отображения 
         this[category] = dish;
@@ -124,6 +124,7 @@ const chosenDishes = {
 
 class Dish {
     constructor(json) {
+        this.id = json.id;
         this.keyword = json.keyword;
         this.name = json.name;
         this.price = json.price;

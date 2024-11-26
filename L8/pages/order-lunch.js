@@ -25,8 +25,7 @@ function updateOrderSummary(dish, adding, orderSummary = null) {
     let select = orderSummary.querySelector(`#${dish.category}-select`);
     if (adding) {
         select.lastElementChild.innerHTML = `${dish.name} ${dish.price}&#8381;`;
-        select.firstElementChild.value = dish.keyword; // hidden input
-
+        select.firstElementChild.value = dish.id; // hidden input
     } else {
         select.lastElementChild.innerHTML 
             = dishSummaryDefaultValues[dish.category];
@@ -76,7 +75,10 @@ function createHTMLErrorNotification(error) {
 
 async function submit() {
     let form = document.getElementById("order-form");
-    const formData = new FormData(form);
+    let formData = new FormData(form);
+    formData.set("subscribe", Number(formData.get("subscribe") == "on"));
+
+    console.log(formData);
 
     let message = null;
 
