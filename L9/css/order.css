@@ -1,0 +1,80 @@
+.title {
+    font-size: 28px;
+    font-weight: 700;
+    margin: 20px 0px;
+}
+
+.dishes {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 10px;
+}
+
+.dish {
+    display: flex;
+    flex-direction: column;
+    padding: 30px 40px;
+    border-radius: 35px;
+    filter: drop-shadow(17px 19px 24px rgba(0, 0, 0, 0.13));
+    background: white;
+    cursor: pointer;
+}
+
+.chosen-dish {
+    border: 2px solid tomato;
+}
+
+.dish:hover {
+    box-sizing: border-box;
+    border: 2px solid tomato;
+}
+
+.dish_img {
+    width: 100%;
+    border-radius: 35px;
+}
+
+.price {
+    font-size: 22px;
+    margin-top: 10px;
+}
+
+.name {
+    font-size: 20px;
+    margin-bottom: 20px;
+}
+
+.weight {
+    color: grey;
+    font-size: 18px;
+    margin-top: auto;
+    margin-bottom: 10px;
+}
+
+.add-button {
+    background: #f1eee9;
+    padding: 10px 30px;
+    border-radius: 10px;
+    border: none;
+    cursor: pointer;
+}
+
+.dish:hover > .add {
+    background: lightgrey;
+}
+
+@media (max-width: 800px) { 
+    .dishes {
+        grid-template-columns: 1fr 1fr;
+    }
+}
+  
+@media (max-width: 600px) {
+    .title {
+        text-align: center;
+    }
+
+    .dishes {
+        grid-template-columns: 1fr;
+    }
+}
