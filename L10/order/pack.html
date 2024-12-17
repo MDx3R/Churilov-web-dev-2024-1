@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Food Construct</title>
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="../css/order.css">
+    <link rel="stylesheet" href="../css/pack.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header class="header">
+        <div class="container">
+            <h1>Food Construct</h1>
+            <nav class="navbar">
+                <a href="../index.html">О нас</a>
+                <a class="active" href="#">Собрать ланч</a>
+                <a href="checkout.html">Оформить заказ</a>
+                <a href="view.html">Заказы</a>
+                <a href="#footer">Контакты</a>
+            </nav>
+        </div>
+    </header>
+    <main class="content">
+        <div class="container">
+            <div class="combo-container">
+                <div class="combo-variant">
+                    <div class="combo-dish">
+                        <img src="../../images/icons/soup.png" alt="soup" class="dish_icon">
+                        <p class="name">Суп</p>
+                    </div>
+                    <div class="combo-dish">
+                        <img src="../../images/icons/main.png" alt="main" class="dish_icon">
+                        <p class="name">Главное блюдо</p>
+                    </div>
+                    <div class="combo-dish">
+                        <img src="../../images/icons/salad.png" alt="salad" class="dish_icon">
+                        <p class="name">Салат</p>
+                    </div>
+                    <div class="combo-dish">
+                        <img src="../../images/icons/drink.png" alt="beverage" class="dish_icon">
+                        <p class="name">Напиток</p>
+                    </div>
+                </div>
+                <div class="combo-variant">
+                    <div class="combo-dish">
+                        <img src="../../images/icons/soup.png" alt="soup" class="dish_icon">
+                        <p class="name">Суп</p>
+                    </div>
+                    <div class="combo-dish">
+                        <img src="../../images/icons/main.png" alt="main" class="dish_icon">
+                        <p class="name">Главное блюдо</p>
+                    </div>
+                    <div class="combo-dish">
+                        <img src="../../images/icons/drink.png" alt="beverage" class="dish_icon">
+                        <p class="name">Напиток</p>
+                    </div>
+                </div>
+                <div class="combo-variant">
+                    <div class="combo-dish">
+                        <img src="../../images/icons/soup.png" alt="soup" class="dish_icon">
+                        <p class="name">Суп</p>
+                    </div>
+                    <div class="combo-dish">
+                        <img src="../../images/icons/salad.png" alt="salad" class="dish_icon">
+                        <p class="name">Салат</p>
+                    </div>
+                    <div class="combo-dish">
+                        <img src="../../images/icons/drink.png" alt="beverage" class="dish_icon">
+                        <p class="name">Напиток</p>
+                    </div>
+                </div>
+                <div class="combo-variant">
+                    <div class="combo-dish">
+                        <img src="../../images/icons/main.png" alt="main" class="dish_icon">
+                        <p class="name">Главное блюдо</p>
+                    </div>
+                    <div class="combo-dish">
+                        <img src="../../images/icons/salad.png" alt="salad" class="dish_icon">
+                        <p class="name">Салат</p>
+                    </div>
+                    <div class="combo-dish">
+                        <img src="../../images/icons/drink.png" alt="beverage" class="dish_icon">
+                        <p class="name">Напиток</p>
+                    </div>
+                </div>
+                <div class="combo-variant">
+                    <div class="combo-dish">
+                        <img src="../../images/icons/main.png" alt="main" class="dish_icon">
+                        <p class="name">Главное блюдо</p>
+                    </div>
+                    <div class="combo-dish">
+                        <img src="../../images/icons/drink.png" alt="beverage" class="dish_icon">
+                        <p class="name">Напиток</p>
+                    </div>
+                </div>
+                <div class="combo-variant">
+                    <div class="combo-dish">
+                        <img src="../../images/icons/desert.png" alt="dessert" class="dish_icon">
+                        <p>Десерт</p>
+                        <i>(Можно добавить к любому заказу)</i>
+                    </div>
+                </div>
+            </div>
+
+            <section id="soup" class="section">
+                <h2 class="title">Выберите суп</h2>
+                <div class="filter-container">
+                    <button class="filter-button" data-kind="fish">рыбный</button>
+                    <button class="filter-button" data-kind="meat">мясной</button>
+                    <button class="filter-button" data-kind="veg">вегетарианский</button>
+                </div>
+                <div class="dishes"></div>
+            </section>
+            <section id="main-course" class="section">
+                <h2 class="title">Выберите главное блюдо</h2>
+                <div class="filter-container">
+                    <button class="filter-button" data-kind="fish">рыбное</button>
+                    <button class="filter-button" data-kind="meat">мясное</button>
+                    <button class="filter-button" data-kind="veg">вегетарианское</button>
+                </div>
+                <div class="dishes"></div>
+            </section>
+            <section id="salad" class="section">
+                <h2 class="title">Выберите салат или стартер</h2>
+                <div class="filter-container">
+                    <button class="filter-button" data-kind="fish">рыбный</button>
+                    <button class="filter-button" data-kind="meat">мясной</button>
+                    <button class="filter-button" data-kind="veg">вегетарианский</button>
+                </div>
+                <div class="dishes"></div>
+            </section>
+            <section id="drink" class="section">
+                <h2 class="title">Выберите напиток</h2>
+                <div class="filter-container">
+                    <button class="filter-button" data-kind="cold">горячий</button>
+                    <button class="filter-button" data-kind="hot">холодный</button>
+                </div>
+                <div class="dishes"></div>
+            </section>
+            <section id="dessert" class="section">
+                <h2 class="title">Выберите десерт</h2>
+                <div class="filter-container">
+                    <button class="filter-button" data-kind="small">маленькая порция</button>
+                    <button class="filter-button" data-kind="medium">средняя порция</button>
+                    <button class="filter-button" data-kind="large">большая порция</button>
+                </div>
+                <div class="dishes"></div>
+            </section>
+        </div>
+    </main>
+    <div class="order-line" hidden>
+        <p class="price">Итого: 0&#8381;</p>
+        <a href="checkout.html" class="order-button">Перейти к оформлению</a>
+    </div>
+    <footer id="footer">
+        <div class="container">
+            <p>Позвонить нам <a href="tel:+79002001030">+7-900-200-10-30</a></p>
+        </div>
+    </footer>
+    <script type="module" src="../js/order/pack.js"></script>
+</body>
+</html>

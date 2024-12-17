@@ -1,0 +1,27 @@
+.nav {
+    background-color: #ffffff;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+}
+
+section {
+    padding-top: 5rem;
+    padding-bottom: 5rem;
+}
+
+.hero {
+    padding-top: 11rem;
+}
+
+.feature-icon {
+    font-size: 4rem;
+}
+
+.cta {
+    background: linear-gradient(45deg, rgba(238,174,202,1) 0%, rgba(148,187,233,1) 100%);
+}
+
+.footer {
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+}
